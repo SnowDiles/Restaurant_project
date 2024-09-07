@@ -1,9 +1,32 @@
+
+import { loadContact } from './contact.js';
+// @ts-ignore
+window.loadContact = loadContact;
+
+
+import { loadMenu } from './menu.js';
+// @ts-ignore
+window.loadMenu = loadMenu;
+// @ts-ignore
+window.loadIndex = loadIndex;
+
+
+
+
+
 function loadIndex(){
-  const button = document.getElementById("1button");
+  const button1 = document.getElementById("1button");
+  const button2 = document.getElementById("2button");
+  const button3 = document.getElementById("3button");
+
   const content = document.getElementById("content");
 
   // @ts-ignore
-  button.style.color = `rgb(234, 179, 62)`;
+  button1.style.color = `rgb(234, 179, 62)`;
+  // @ts-ignore
+  button2.style.color = `white`;
+  // @ts-ignore
+  button3.style.color = `white`;
 
 
   
@@ -79,8 +102,5 @@ function loadIndex(){
   console.log("The index have been charged correctly");
 
 }
-
-loadIndex();
-console.log("test");
 
 
